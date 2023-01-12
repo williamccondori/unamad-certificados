@@ -50,7 +50,7 @@ export default {
       if (this.query && this.query.length > 3) {
         const query = this.query?.toLowerCase();
         this.results = this.participants.filter(
-          (x) => x.nombresApellidos.toLowerCase().indexOf(query) > -1
+          (x) => x.name?.toLowerCase().indexOf(query) > -1
         );
       }
     },
